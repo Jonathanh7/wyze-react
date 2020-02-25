@@ -1,14 +1,25 @@
 import React from "react";
+import { BrowserRouter as Router } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 export default function Header() {
   return (
-    <header>
+      <header>
+        
       <h3> Wyze </h3>
-      <ul>
-        <li>Random Advice</li>
-        <li>Search</li>
-        <li>About Us</li>
+        <ul className="head-links">
+          <Link to='/random'>
+            <li>Random Advice</li>
+          </Link>
+          <Link to='/search'>
+            <li>Search</li>
+          </Link>
+          <Link to='/about'>
+            <li>About Us</li>
+          </Link>
+        
       </ul>
-    </header>
+      </header>
+   
   );
 }
