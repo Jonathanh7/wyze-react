@@ -6,6 +6,3 @@ export async function randomAdvice() {
   return response 
 }
 
-export async function specificAdvice() {
-
-}

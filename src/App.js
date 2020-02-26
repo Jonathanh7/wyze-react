@@ -9,15 +9,10 @@ class App extends React.Component {
   constructor() {
     super()
     this.state = ({
-      wisedom: []
+      word: []
     })
   }
-  componentDidMount = async () => {
-    const response = await randomAdvice()
-    this.setState = ({
-      wisedom: response.data.slip.advice
-    })
-    }
+ 
 
 
   render() {
