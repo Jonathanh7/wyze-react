@@ -38,3 +38,14 @@ background: linear-gradient(90deg, rgba(223,221,126,0.8785889355742297) 0%, rgba
   align-items: center;
   list-style: none;
 }
+
+main{
+  background-image: url('./images/small-memory-medium.gif');
+   min-height: 100vh; 
+    background-repeat: no-repeat;  
+   background-size: cover; 
+   background-position: center;  
+
+
+   
+}

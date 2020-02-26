@@ -30,13 +30,15 @@ export default class Search extends Component {
   
   render() {
     const { result } = this.state
-    const advices = this.state.result && result.map((advice) => {
+    const advices = this.state.result ? result.map((advice) => {
       return(
         <div key={advice.slip_id}>
-        <h1>{advice.advice}</h1>
-        </div>
-      )
-    })
+          <h1>{advice.advice}</h1>
+        </div> 
+      ) 
+    }) :
+     <p>No Results </p>
+    
     console.log(result)
     return (
       <div>
