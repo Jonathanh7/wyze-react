@@ -7,7 +7,7 @@ export default class Search extends Component {
     this.handleSubmit = this.handleSubmit.bind(this);
     this.handleChange = this.handleChange.bind(this);
     this.state = {
-      result: {},
+      result: [],
       search: ""
     };
   }
@@ -18,16 +18,26 @@ export default class Search extends Component {
     });
   }
 
-  async handleSubmit(event) {
+  async handleSubmit(_event) {
     const response = await axios.get(
       `https://api.adviceslip.com/advice/search/${this.state.search}`
     );
     this.setState({
-      result: response
+      result: response.data.slips
     });
   }
 
+  
   render() {
+    const { result } = this.state
+    const advices = this.state.result && result.map((advice) => {
+      return(
+        <div key={advice.slip_id}>
+        <h1>{advice.advice}</h1>
+        </div>
+      )
+    })
+    console.log(result)
     return (
       <div>
         <h1>Search Results</h1>
@@ -39,6 +49,8 @@ export default class Search extends Component {
           onChange={this.handleChange}
         />
         <input type="button" onClick={this.handleSubmit} />
+       
+        {advices}
       </div>
     );
   }

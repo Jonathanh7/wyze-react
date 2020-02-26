@@ -1,9 +1,18 @@
+html {
+  margin: 0;
+  height: 100vh; 
+}
+body {
+  margin: 0;
+  height: 100vh;
+}
+
 .App {
   text-align: center;
 }
 
 h3 {
-  font-size: 60px;
+  font-size: 100px;
   font-family: Monofett;
 }
 ul {
@@ -16,8 +25,9 @@ header {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  min-height: 10vh;
-  background: #fff620;
+  height: 200px;
+  background: rgb(223,221,126);
+background: linear-gradient(90deg, rgba(223,221,126,0.8785889355742297) 0%, rgba(220,242,20,1) 38%, rgba(85,141,184,1) 100%);
   color: #5973bd;
 }
 
