@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import Random from "./components/Random";
 import Search from "./components/Search";
 import aboutUs from "./components/aboutUs";
+import NotFound from "./components/NotFound";
 
 export default class Container extends React.Component  {
   constructor() {
@@ -23,6 +24,7 @@ export default class Container extends React.Component  {
           } />
           <Route path="/search" component={Search} />
           <Route path="/about" component={aboutUs} />
+          <Route exact path= {'*'} component={NotFound} />
         </Switch>
   
       </div>
