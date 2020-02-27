@@ -23,7 +23,7 @@ class App extends React.Component {
             params={{
               particles: {
                 number: {
-                  value: 160,
+                  value: 700,
                   density: {
                     enable: false
                   }
@@ -32,7 +32,7 @@ class App extends React.Component {
                   value: 5,
                   random: true,
                   anim: {
-                    speed: 4,
+                    speed: 10,
                     size_min: 0.3
                   }
                 },

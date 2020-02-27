@@ -41,7 +41,7 @@ export default class Search extends Component {
     
     console.log(result)
     return (
-      <div>
+      <div id="searchResults">
         <h1>Search Results</h1>
         <input
           type="text"

@@ -1,10 +1,13 @@
 html {
   margin: 0;
-  height: 100vh; 
+  height: 100vh;
 }
 body {
   margin: 0;
   height: 100vh;
+}
+h1 {
+  margin: 0 auto;
 }
 canvas {
   display: block;
@@ -12,46 +15,61 @@ canvas {
   margin-top: 0px;
   margin-bottom: 0px;
 }
+button {
+  position: relative;
+}
+
+#searchResults {
+  position: relative;
+}
 
 .App {
   text-align: center;
 }
 
 h3 {
+  display: flex;
   font-size: 100px;
   font-family: Monofett;
-}
-ul {
-  display: flex;
-  align-self: flex-end;
-  text-decoration: none;
+  align-self: center;
+  margin: 0 auto;
 }
 
 header {
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-end;
+  /* justify-content: space-around; */
   align-items: center;
   height: 200px;
-  background: rgb(223,221,126);
-background: linear-gradient(90deg, rgba(223,221,126,0.8785889355742297) 0%, rgba(220,242,20,1) 38%, rgba(85,141,184,1) 100%);
+  background: rgb(223, 221, 126);
+  background: linear-gradient(
+    90deg,
+    rgba(223, 221, 126, 0.8785889355742297) 0%,
+    rgba(220, 242, 20, 1) 38%,
+    rgba(85, 141, 184, 1) 100%
+  );
   color: #5973bd;
+  flex-flow: wrap;
 }
 
 .head-links {
-  width: 40%;
+  width: 200%;
   display: flex;
   justify-content: space-around;
   align-items: center;
   list-style: none;
+  -webkit-text-emphasis-style: triangle;
+  text-emphasis-style: triangle;
+  font-family: Monofett;
+  font-size: 20px;
+  margin: 0 auto;
+  align-self: flex-end;
 }
 
-main{
-  background-image: url('./images/small-memory-medium.gif');
-   min-height: 100vh; 
-    background-repeat: no-repeat;  
-   background-size: cover; 
-   background-position: center;  
-
-
-   
+main {
+  background-image: url("./images/small-memory-medium.gif");
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
