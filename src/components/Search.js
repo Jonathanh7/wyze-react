@@ -32,16 +32,18 @@ export default class Search extends Component {
     const { result } = this.state
     const advices = this.state.result ? result.map((advice) => {
       return(
-        <div key={advice.slip_id}>
+        <div className="quota" key={advice.slip_id}>
           <h1>{advice.advice}</h1>
         </div> 
       ) 
     }) :
-     <p>No Results </p>
+      <div className="None" >
+        <img src= "https://i.imgur.com/2TZQiT7.jpg"/>
+        </div>
     
     console.log(result)
     return (
-      <div>
+      <div id="searchResults">
         <h1>Search Results</h1>
         <input
           type="text"

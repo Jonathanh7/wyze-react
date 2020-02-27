@@ -5,6 +5,7 @@ import { randomAdvice } from "./services/Constants";
 import { Route, Link } from "react-router-dom";
 import Container from "./Container";
 import Particles from "react-particles-js";
+import Footer from "./components/Footer";
 
 class App extends React.Component {
   constructor() {
@@ -23,7 +24,7 @@ class App extends React.Component {
             params={{
               particles: {
                 number: {
-                  value: 160,
+                  value: 700,
                   density: {
                     enable: false
                   }
@@ -32,7 +33,7 @@ class App extends React.Component {
                   value: 5,
                   random: true,
                   anim: {
-                    speed: 4,
+                    speed: 10,
                     size_min: 0.3
                   }
                 },
@@ -73,6 +74,7 @@ class App extends React.Component {
             }}
           />
           <Container />
+          <Footer />
         </main>
       </div>
     );
