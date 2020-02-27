@@ -30,7 +30,7 @@ class Random extends Component {
       <div>
         <h1>Random Advice</h1>
         <button onClick={this.handleClick}>Click For Random Wisedom</button>
-        <p>{this.state.counsel}</p>
+        <p className="answer">{this.state.counsel}</p>
       </div>
     );
   }

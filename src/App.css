@@ -41,7 +41,6 @@ h3 {
 header {
   display: flex;
   justify-content: flex-end;
-  /* justify-content: space-around; */
   align-items: center;
   height: 200px;
   background: rgb(223, 221, 126);
@@ -75,4 +74,26 @@ main {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  
+
+}
+
+.foot {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.quota {
+  margin: 4%;
+  background:rgba(0, 0, 0, 0.358);
+  color:rgb(247, 247, 57) ;
+}
+.answer {
+  margin: 4%;
+  background:rgba(0, 0, 0, 0.358);
+  color:rgb(247, 247, 57) ;
+}
+
+@media (max-width:700px) {
+  
 }

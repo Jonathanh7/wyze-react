@@ -32,7 +32,7 @@ export default class Search extends Component {
     const { result } = this.state
     const advices = this.state.result ? result.map((advice) => {
       return(
-        <div key={advice.slip_id}>
+        <div className="quota" key={advice.slip_id}>
           <h1>{advice.advice}</h1>
         </div> 
       ) 
