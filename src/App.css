@@ -26,7 +26,7 @@ button {
 .App {
   text-align: center;
 }
-.None{
+.None {
   background-size: cover;
 }
 
@@ -74,8 +74,6 @@ main {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  
-
 }
 
 .foot {
@@ -85,21 +83,24 @@ main {
 
 .quota {
   margin: 4%;
-  background:rgba(0, 0, 0, 0.358);
-  color:rgb(247, 247, 57) ;
-  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.358);
+  color: rgb(247, 247, 57);
+  border-radius: 30px;
+  padding: 2vh;
 }
 .answer {
   margin: 4%;
-  background:rgba(0, 0, 0, 0.358);
-  color:rgb(247, 247, 57) ;
-  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.358);
+  color: rgb(247, 247, 57);
+  border-radius: 30px;
+  padding: 2vh;
 }
 
 .Summary {
   position: relative;
   margin: 4%;
-  background:rgba(0, 0, 0, 0.358);
-  color:rgb(247, 247, 57) ;
-  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.358);
+  color: rgb(247, 247, 57);
+  border-radius: 30px;
+  padding: 2vh;
 }
