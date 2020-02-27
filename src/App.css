@@ -26,6 +26,9 @@ button {
 .App {
   text-align: center;
 }
+.None{
+  background-size: cover;
+}
 
 h3 {
   display: flex;

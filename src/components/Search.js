@@ -37,7 +37,9 @@ export default class Search extends Component {
         </div> 
       ) 
     }) :
-     <p>No Results </p>
+      <div className="None" >
+        <img src= "https://i.imgur.com/2TZQiT7.jpg"/>
+        </div>
     
     console.log(result)
     return (
