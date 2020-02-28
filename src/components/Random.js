@@ -1,32 +1,26 @@
 import React, { Component } from "react";
-import { randomAdvice } from '../services/Constants'
-
+import { randomAdvice } from "../services/Constants";
 
 class Random extends Component {
   constructor(props) {
     super(props);
     this.handleClick = this.handleClick.bind(this);
     this.state = {
-      counsel: "",
+      counsel: ""
     };
   }
-   async handleClick() {
-     const inspired = await randomAdvice()
-     console.log(inspired)
-     this.setState({
-       counsel: inspired.data.slip.advice 
-     })
-
-     }
-   
+  async handleClick() {
+    const inspired = await randomAdvice();
+    this.setState({
+      counsel: inspired.data.slip.advice
+    });
+  }
 
   componentDidMount = async () => {
-    this.handleClick()
-    }
-
+    this.handleClick();
+  };
 
   render() {
-    
     return (
       <div>
         <h1>Random Advice</h1>
@@ -36,6 +30,5 @@ class Random extends Component {
     );
   }
 }
-
 
 export default Random;
