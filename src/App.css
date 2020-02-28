@@ -105,3 +105,20 @@ main {
   border-radius: 30px;
   padding: 2vh;
 }
+
+@media (max-width: 700px) {
+  .head-links {
+    width: 200%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    -webkit-text-emphasis-style: triangle;
+    text-emphasis-style: triangle;
+    font-family: Monofett;
+    font-size: 16px;
+    margin: 0 auto;
+    align-self: flex-end;
+    padding: 15px;
+  }
+}

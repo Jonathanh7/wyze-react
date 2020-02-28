@@ -12,6 +12,7 @@ class Random extends Component {
   }
    async handleClick() {
      const inspired = await randomAdvice()
+     console.log(inspired)
      this.setState({
        counsel: inspired.data.slip.advice 
      })
